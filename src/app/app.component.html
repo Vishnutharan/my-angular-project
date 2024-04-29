@@ -3,27 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title of the document</title>
+  <title>Title of the Document</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    /* Custom styles for the navbar */
+    /* Custom styles for navbar */
     .navbar-custom {
       background-color: #f8f9fa;
-      padding: 10px 0;
+      padding: 10px 20px; /* Adjust padding for aesthetics */
+      display: flex; /* Enable flexbox for positioning */
+      justify-content: space-between; /* Distribute items horizontally */
     }
 
     .navbar-custom .navbar-brand {
       color: #333;
       padding: 10px 15px;
       border-radius: 5px;
-      margin-right: 10px;
     }
 
     .navbar-custom .navbar-brand.active {
       background-color: #075aff;
     }
 
-    /* Add more styles for active links if needed */
+    .navbar-custom .nav-links { /* Create a container for links */
+      display: flex; /* Enable flexbox for links */
+      list-style: none; /* Remove default list styling */
+      padding: 0; /* Remove default padding */
+      margin: 0; /* Remove default margin */
+    }
+
+    .navbar-custom .nav-links li { /* Style each link */
+      margin-right: 15px; /* Add spacing between links */
+    }
+
+    .navbar-custom .nav-links a { /* Style link text */
+      color: #333;
+      text-decoration: none; /* Remove underline */
+      font-weight: bold; /* Add emphasis */
+      transition: all 0.3s ease-in-out; /* Add smooth hover effect */
+    }
+
+    .navbar-custom .nav-links a:hover { /* Style hover effect */
+      color: #075aff;
+    }
 
     /* Optional: Adjust logo size for smaller screens */
     @media (max-width: 768px) {
@@ -42,11 +63,12 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-  <a href="#" class="navbar-brand active">FirstPage</a>
-  <a href="#" class="navbar-brand" routerLink="home-componant">Home</a>
-  <a href="#" class="navbar-brand" routerLink="about-componant">About</a>
-  <a href="#" class="navbar-brand" routerLink="contact-componant">Contact</a>
-  <img src="../assets/360_F_614845842_pNcPaSxVwBiO6hGaaSXKrQOCs6xqnijX.jpg" alt="Logo" height="60">
+  <a href="#" class="navbar-brand">  <img src="../assets/360_F_614845842_pNcPaSxVwBiO6hGaaSXKrQOCs6xqnijX.jpg" alt="Logo" height="60">  My Brand Name  </a>
+  <ul class="navbar-nav nav-links">  <li><a href="#" class="nav-link active">FirstPage</a></li>
+    <li><a href="#" class="nav-link" routerLink="home-componant">Home</a></li>
+    <li><a href="#" class="nav-link" routerLink="about-componant">About</a></li>
+    <li><a href="#" class="nav-link" routerLink="contact-componant">Contact</a></li>
+  </ul>
 </nav>
 
 <div class="container">
