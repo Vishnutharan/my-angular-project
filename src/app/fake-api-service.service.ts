@@ -13,4 +13,11 @@ export class FakeApiServiceService {
     ];
     return of(data);
   }
+
+  datas = ["vishnu", "tharan", "stranger", "mufasa", "pinpulan"];
+
+  getDatafromobser(): Observable<String[]> {
+    return of(this.datas);
+
+  }
 }

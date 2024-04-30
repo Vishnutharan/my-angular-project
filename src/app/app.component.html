@@ -64,7 +64,8 @@
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
   <a href="#" class="navbar-brand">  <img src="../assets/360_F_614845842_pNcPaSxVwBiO6hGaaSXKrQOCs6xqnijX.jpg" alt="Logo" height="60">  My Brand Name  </a>
-  <ul class="navbar-nav nav-links">  <li><a href="#" class="nav-link active">FirstPage</a></li>
+  <ul class="navbar-nav nav-links">  
+    <li><a href="#" class="nav-link" routerLink="my-practice">Login</a></li>
     <li><a href="#" class="nav-link" routerLink="home-componant">Home</a></li>
     <li><a href="#" class="nav-link" routerLink="about-componant">About</a></li>
     <li><a href="#" class="nav-link" routerLink="contact-componant">Contact</a></li>
@@ -73,6 +74,11 @@
 
 <div class="container">
   <router-outlet></router-outlet>
+</div>
+<div *ngIf="datas">
+  <div *ngFor="let item of datas">
+    {{item}}
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
