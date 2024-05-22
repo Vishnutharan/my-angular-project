@@ -1,88 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Title of the Document</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* Custom styles for navbar */
-    .navbar-custom {
-      background-color: #f8f9fa;
-      padding: 10px 20px; /* Adjust padding for aesthetics */
-      display: flex; /* Enable flexbox for positioning */
-      justify-content: space-between; /* Distribute items horizontally */
-    }
-
-    .navbar-custom .navbar-brand {
-      color: #333;
-      padding: 10px 15px;
-      border-radius: 5px;
-    }
-
-    .navbar-custom .navbar-brand.active {
-      background-color: #075aff;
-    }
-
-    .navbar-custom .nav-links { /* Create a container for links */
-      display: flex; /* Enable flexbox for links */
-      list-style: none; /* Remove default list styling */
-      padding: 0; /* Remove default padding */
-      margin: 0; /* Remove default margin */
-    }
-
-    .navbar-custom .nav-links li { /* Style each link */
-      margin-right: 15px; /* Add spacing between links */
-    }
-
-    .navbar-custom .nav-links a { /* Style link text */
-      color: #333;
-      text-decoration: none; /* Remove underline */
-      font-weight: bold; /* Add emphasis */
-      transition: all 0.3s ease-in-out; /* Add smooth hover effect */
-    }
-
-    .navbar-custom .nav-links a:hover { /* Style hover effect */
-      color: #075aff;
-    }
-
-    /* Optional: Adjust logo size for smaller screens */
-    @media (max-width: 768px) {
-      .navbar-custom .navbar-brand {
-        padding: 5px 10px;
-        font-size: 0.8rem;
-      }
-
-      .navbar-custom .navbar-brand img {
-        height: 50px;
-        width: auto;
-      }
-    }
-  </style>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
+
 <body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../assets/png-transparent-phoenix-logo-design-mark-phoenix-fire-thumbnail.png" alt="Logo">
+    </div>
+    <ul class="nav-list">
+      <li><a href="#" class="nav-link" routerLink="home-componant">Home</a></li>
+      <li><a href="#" class="nav-link" routerLink="about-componant">About</a></li>
+      <li><a href="#" class="nav-link" routerLink="contact-componant">Contact</a></li>
+      <li><a href="#" class="nav-link" routerLink="my-practice">Employee</a></li>
+      <!-- <li><a href="#" class="nav-link" routerLink="login-componant">Login</a></li> -->
 
-<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-  <a href="#" class="navbar-brand">  <img src="../assets/360_F_614845842_pNcPaSxVwBiO6hGaaSXKrQOCs6xqnijX.jpg" alt="Logo" height="60">  My Brand Name  </a>
-  <ul class="navbar-nav nav-links">  
-    <li><a href="#" class="nav-link" routerLink="my-practice">Login</a></li>
-    <li><a href="#" class="nav-link" routerLink="home-componant">Home</a></li>
-    <li><a href="#" class="nav-link" routerLink="about-componant">About</a></li>
-    <li><a href="#" class="nav-link" routerLink="contact-componant">Contact</a></li>
-  </ul>
-</nav>
+    </ul>
+    <div class="rightnav">
+      <input type="text" name="search" id="search" placeholder="Search...">
+      <button class="btn btn-sm">Search</button>
+    </div>
+    <div class="logins">
+      <!-- <button class="loginbtn"><a href="#" class="nav-link" routerLink="login-componant">Login</a></button> -->
+      <button class="loginbtn"><a a href="#" routerLink="login-componant">Login</a></button>
 
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
-<div *ngIf="datas">
-  <div *ngFor="let item of datas">
-    {{item}}
+    </div>
+  </nav>
+
+  <div class="container">
+    <router-outlet></router-outlet>
   </div>
-</div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

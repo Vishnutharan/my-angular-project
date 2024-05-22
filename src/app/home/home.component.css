@@ -38,4 +38,38 @@
   .btn:hover {
     background-color: #0056b3;
   }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
   
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .employee-card {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .employee-card h2 {
+    margin-top: 0;
+  }
+  
+  .employee-card p {
+    margin-bottom: 10px;
+  }
+  
+  .employee-card .job-title {
+    font-weight: bold;
+  }
+  
+  .employee-card .contact-info {
+    font-style: italic;
+  }

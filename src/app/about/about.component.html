@@ -1,75 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-    }
-    .container {
-        max-width: 1200px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-        text-align: center;
-        color: #333;
-    }
-    .description {
-        margin-top: 20px;
-        text-align: justify;
-    }
-    .images-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-    }
-    .image {
-        margin: 0 10px;
-        border-radius: 5px;
-        overflow: hidden;
-    }
-    .image img {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-    }
-    .image img:hover {
-        transform: scale(1.1);
-    }
-    .gif {
-        margin: 0 10px;
-        width: 200px;
-        height: 200px;
-        border-radius: 5px;
-        overflow: hidden;
-        transition: transform 0.3s ease;
-    }
-    .gif:hover {
-        transform: scale(1.1);
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
 </head>
+
 <body>
     <div class="container">
         <h1>About Us</h1>
         <div class="description">
-            <p>Welcome to our printing company! We are dedicated to providing high-quality printing services with a focus on customer satisfaction.</p>
-            <p>Our team consists of skilled professionals who ensure that every print job meets the highest standards of quality and precision.</p>
-            <p>Explore our services and discover how we can bring your ideas to life through vibrant colors and crisp prints.</p>
+            <p>Welcome to our printing company! We are dedicated to providing high-quality printing services with a
+                focus on customer satisfaction. Our team consists of skilled professionals who ensure that every print
+                job meets the highest standards of quality and precision. Explore our services and discover how we can
+                bring your ideas to life through vibrant colors and crisp prints.</p>
         </div>
         <div class="images-container">
             <div class="image">
                 <a href="javascript:void(0);" onclick="showImage('printer.jpg')">
-                    <img src="printer.jpg" alt="Printer">
+                    <img src="" alt="Printer">
                 </a>
             </div>
             <div class="image">
@@ -88,13 +39,14 @@
     <script>
         function showImage(imageSrc) {
             alert('Clicked on image: ' + imageSrc);
-            // You can replace the alert with any other action, like opening a modal or enlarging the image
+            // Replace the alert with any other action, like opening a modal or enlarging the image
         }
 
         function showGif(gifSrc) {
             alert('Clicked on GIF: ' + gifSrc);
-            // You can replace the alert with any other action, like playing the GIF or opening a modal
+            // Replace the alert with any other action, like playing the GIF or opening a modal
         }
     </script>
 </body>
+
 </html>

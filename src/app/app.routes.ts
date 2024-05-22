@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
     { path: 'my-practice', component: MyPracticeComponent },
     { path: 'home-componant', component: HomeComponent },
     { path: 'about-componant', component: AboutComponent },
     { path: 'contact-componant', component: ContactComponent },
+    { path: 'login-componant', component: LoginComponent }
 
 ];
 
